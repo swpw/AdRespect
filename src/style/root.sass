@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Khula:wght@300;400;600;700;800&display=swap')
+@import '@splidejs/splide/css'
+
+=e($element)
+  &__#{$element}
+    @content
+
+=m($modifer)
+  &--#{$modifer}
+    @content
+
+=min($size)
+  @media (min-width: #{$size + px})
+    @content
+
+=max($size)
+  @media (max-width: #{$size + px})
+    @content
+
+$karla: 'Karla', sans-serif
+$khula: 'Khula', sans-serif
+
+$color1: #1D1D1B
+$color2: #fff
+$color3: #EF7925
+
+$color4: #121212
+$color5: #d4d4d4
+$color6: #ededed
+$color7: #323232
+$color8: #F8F8F8
+
+@import ./default/reset.sass
+@import ./default/normalize.sass
+
+@import ./lightbox.sass
+
+@import ./layouts/default.sass
+@import ./layouts/nav.sass
+@import ./layouts/header.sass
+@import ./layouts/pricing.sass
+@import ./layouts/gallery.sass
+@import ./layouts/footer.sass

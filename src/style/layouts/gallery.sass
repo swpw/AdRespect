@@ -1,0 +1,47 @@
+.gallery
+  padding: 40px 88px 80px
+  +max(768)
+    padding: 80px 44px
+  +max(425)
+    padding: 80px 30px
+
+  +e('quote')
+    font-family: $khula
+    font-style: normal
+    font-weight: 400
+    font-size: 21.5px
+    line-height: 150%
+    text-align: center
+    color: $color3
+    display: inline
+
+  +e('title')
+    font-family: $karla
+    font-style: normal
+    font-weight: 700
+    font-size: 28.5px
+    line-height: 120%
+    color: $color1
+    margin: 16px 0 80px
+
+
+  +e('container')
+
+  +e('link')
+    overflow: hidden
+
+  +e('img')
+    width: 100%
+    object-fit: cover
+    object-position: center center
+
+.splide__slide
+
+.splide__pagination
+  bottom: -48px
+
+.splide__pagination__page
+  background: $color5
+
+.splide__pagination__page.is-active
+  background: $color3

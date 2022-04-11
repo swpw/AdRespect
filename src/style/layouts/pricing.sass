@@ -1,0 +1,199 @@
+.pricing
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 80px 0 40px
+  overflow-x: hidden
+
+  +e('small-title')
+    font-family: $khula
+    font-style: normal
+    font-weight: 400
+    font-size: 28.5px
+    line-height: 150%
+    text-align: center
+    color: $color3
+    +max(1024)
+      font-size: 23px
+    +max(550)
+      font-size: 20px
+    +max(425)
+      font-size: 18px
+
+
+  +e('title')
+    font-family: $karla
+    font-style: normal
+    font-weight: 700
+    font-size: 67.5px
+    line-height: 110%
+    text-align: center
+    letter-spacing: -0.7px
+    color: $color1
+    +max(1024)
+      font-size: 54px
+    +max(768)
+      font-size: 44px
+    +max(550)
+      font-size: 38px
+    +max(425)
+      font-size: 32px
+
+  +e('description')
+    font-family: $khula
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 150%
+    text-align: center
+    color: $color1
+    margin: 32px 0 48px
+    +max(550)
+      padding: 0 42px
+    +max(425)
+      font-size: 14px
+
+  +e('button-container')
+    display: flex
+    padding: 4px
+    border-radius: 1000px
+    border: 1px solid $color6
+
+  +e('button')
+    font-family: $khula
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    text-align: center
+    letter-spacing: 0.02em
+    color: $color1
+    background: transparent
+    border: none
+    border-radius: 1000px
+    width: 112px
+    height: 46px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    +m('active')
+      color: $color2
+      background: $color3
+      z-index: 1
+
+  +e('container')
+    margin: 48px 0 32px
+
+  +e('note-paragraph')
+    font-family: $khula
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 150%
+    text-align: center
+    color: $color7
+
+
+
+  .card
+    padding: 48px
+    border-radius: 12px
+    border: 1px solid $color6
+    width: 354px
+    animation: slideIn .3s ease-in
+    +m('active')
+      background: $color8
+    +max(1300)
+      width: 300px
+      padding: 42px
+    +max(768)
+      width: 354px
+      padding: 48px
+    +max(425)
+      width: 280px
+      padding: 32px
+
+    +e('outside-container')
+      display: none
+      +m('is-active')
+        display: flex
+
+    +e('type')
+      font-family: $khula
+      font-style: normal
+      font-weight: 400
+      font-size: 21.5px
+      line-height: 150%
+      color: $color1
+      margin-bottom: 8px
+
+    +e('price')
+      font-family: $karla
+      font-style: normal
+      font-weight: 700
+      font-size: 50.5px
+      line-height: 115%
+      letter-spacing: -0.4px
+      color: $color1
+      +max(1300)
+      font-size: 45px
+      +max(768)
+      font-size: 50.5px
+      +max(425)
+      font-size: 40px
+
+    +e('date')
+      font-family: $khula
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+      line-height: 150%
+      color: $color1
+
+    +e('ul')
+      margin: 40px 0 72px 0
+
+    +e('li')
+      font-family: $khula
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 150%
+      color: $color1
+      padding-bottom: 16px
+      border-bottom: 1px solid $color6
+      width: 100%
+      margin-bottom: 16px
+
+    +e('icon')
+      margin-right: 16px
+
+    +e('subscribe')
+      background: $color3
+      border: none
+      border-radius: 3px
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100%
+      font-family: $khula
+      font-style: normal
+      font-weight: 700
+      font-size: 18px
+      text-align: center
+      color: $color2
+      height: 48px
+      cursor: pointer
+
+
+  @keyframes slideIn
+    0%
+      transform: translateY(-7vh) 
+      opacity: 0   
+    100%
+      transform: translateY(0)
+      opacity: 1
+
+#splide-monthly .splide__slide, #splide-yearly .splide__slide
+  display: flex
+  justify-content: center

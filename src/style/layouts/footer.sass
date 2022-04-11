@@ -1,0 +1,58 @@
+.footer
+  background: $color4
+  padding: 55px 165px 40px
+  +max(1024)
+    padding: 55px 82px 40px
+  +max(768)
+    padding: 55px 42px 40px
+  +max(375)
+    padding: 55px 32px 40px
+
+  +e('container')
+    margin-bottom: 160px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    +max(600)
+      flex-direction: column
+      align-items: flex-start
+      justify-content: flex-start
+      margin-bottom: 80px
+
+  +e('logo')
+    width: 100px
+    height: 20.17px
+
+  +e('ul')
+    display: flex
+    align-items: center
+    +max(600)
+      margin-top: 42px
+
+  +e('li')
+    font-family: $khula
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    text-align: center
+    margin-right: 56px
+    &:last-of-type
+      margin-right: 0
+    +max(768)
+      margin-right: 30px
+    +max(425)
+      margin-right: 20px
+      font-size: 13px
+
+    a
+      color: $color2
+      text-decoration: none
+      &:hover
+        color: $color3
+
+  +e('copyright')
+    font-family: $khula
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    color: #807E7E
